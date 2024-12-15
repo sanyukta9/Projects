@@ -1,4 +1,4 @@
-package dev.sanyukta.chatgpt;
+package sanyukta.chatgpt;
 
 import io.github.wimdeblauwe.htmx.spring.boot.mvc.HtmxResponse;
 import io.github.wimdeblauwe.htmx.spring.boot.mvc.HxRequest;
@@ -16,12 +16,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 @CrossOrigin
-public class MyController {
+public class ChatGptController {
 
-    private static final Logger log = LoggerFactory.getLogger(MyController.class);
+    private static final Logger log = LoggerFactory.getLogger(ChatGptController.class);
     private final ChatClient chatClient;
 
-    public MyController(ChatClient.Builder builder) {
+    public ChatGptController(ChatClient.Builder builder) {
         this.chatClient = builder
                 .defaultAdvisors(new MessageChatMemoryAdvisor(new InMemoryChatMemory()))
                 .build();

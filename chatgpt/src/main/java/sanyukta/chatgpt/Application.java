@@ -1,13 +1,13 @@
-package dev.sanyukta.chatgpt;
+package sanyukta.chatgpt;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ChatGptApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ChatGptApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }
